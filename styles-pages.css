@@ -1,0 +1,175 @@
+/* Generated to match rahul-anime-portal.com — edit colors if needed */
+
+/* Page Content Styles */
+.page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.page-content h1 {
+    font-size: 32px;
+    color: #ff6b6b;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.page-content h2 {
+    font-size: 24px;
+    color: #ff6b6b;
+    margin: 30px 0 15px 0;
+}
+
+.page-content h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 25px 0 10px 0;
+}
+
+.page-content p {
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.page-content ul, .page-content ol {
+    color: #cccccc;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.page-content li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.page-content a {
+    color: #ff6b6b;
+    text-decoration: none;
+}
+
+.page-content a:hover {
+    color: #e55a5a;
+    text-decoration: underline;
+}
+
+/* Skip Link for Accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #ff6b6b;
+    color: #ffffff;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+
+/* Cookie Notice */
+.cookie-notice {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.cookie-notice h3 {
+    color: #ff6b6b;
+    margin-bottom: 15px;
+}
+
+/* Affiliate Notice */
+.affiliate-notice {
+    background-color: #1a1a1a;
+    border: 1px solid #ff6b6b;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0 30px 0;
+}
+
+.affiliate-notice h2 {
+    color: #ff6b6b;
+    margin-bottom: 15px;
+}
+
+/* Sample Notice */
+.sample-notice {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.sample-notice pre {
+    background-color: #0b0b0b;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 15px;
+    overflow-x: auto;
+    color: #cccccc;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Contact Info */
+.contact-info {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+/* Sitemap List */
+.sitemap-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sitemap-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #333;
+}
+
+.sitemap-list li:last-child {
+    border-bottom: none;
+}
+
+/* Last Updated and Design Note */
+.last-updated, .design-note {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-top: 40px;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-content {
+        padding: 20px 15px;
+    }
+
+    .page-content h1 {
+        font-size: 28px;
+    }
+
+    .page-content h2 {
+        font-size: 22px;
+    }
+
+    .cookie-notice, .affiliate-notice, .sample-notice, .contact-info {
+        padding: 15px;
+    }
+}

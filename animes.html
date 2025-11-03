@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Details - Rahul Anime Portal</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animes.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Back to Home Button -->
+    <button id="back-to-home" class="back-btn">← Back to Home</button>
+
+    <!-- Loader Overlay -->
+    <div id="loader" class="loader-overlay">
+        <div class="loader-spinner"></div>
+        <p>Loading anime details...</p>
+    </div>
+
+    <!-- Main Content -->
+    <main class="anime-details-container">
+        <div id="animeDetails">
+            <!-- Anime details will be populated here -->
+        </div>
+    </main>
+
+    <script>
+const params = new URLSearchParams(window.location.search);
+const animeId = params.get("id");
+
+const apiUrl = `https://api.jikan.moe/v4/anime/${animeId}/full`;
+
+// Show loader initially
+const loader = document.getElementById("loader");
+if (loader) {
+  loader.style.display = "flex";
+  loader.style.opacity = "1";
+}
+
+document.getElementById("animeDetails").innerHTML = "Loading anime details...";
+
+fetch(apiUrl)
+  .then(res => res.json())
+  .then(data => {
+    const anime = data.data;
+    let html = `
+      <h1>${anime.title}</h1>
+      <img src="${anime.images.jpg.large_image_url}" alt="${anime.title}" width="250">
+      <p><strong>Type:</strong> ${anime.type || "Unknown"}</p>
+      <p><strong>Episodes:</strong> ${anime.episodes || "Unknown"}</p>
+      <p><strong>Status:</strong> ${anime.status || "Unknown"}</p>
+      <p><strong>Score:</strong> ${anime.score || "N/A"}</p>
+      <p><strong>Synopsis:</strong> ${anime.synopsis || "No synopsis available."}</p>
+    `;
+
+    // 🎬 Trailer
+    const trailerDiv = document.createElement("div");
+    if (anime.trailer && (anime.trailer.embed_url || anime.trailer.youtube_id)) {
+      const trailerUrl = anime.trailer.embed_url
+        ? anime.trailer.embed_url
+        : `https://www.youtube.com/embed/${anime.trailer.youtube_id}`;
+      trailerDiv.innerHTML = `
+        <h3>🎬 Trailer</h3>
+        <iframe width="560" height="315" src="${trailerUrl}"
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      `;
+    } else {
+      trailerDiv.innerHTML = `<p>🎬 Trailer not available</p>`;
+    }
+    html += trailerDiv.outerHTML;
+
+    // 🔗 Related Titles
+    const related = anime.relations || [];
+    if (related.length > 0) {
+      html += `<h3>🔗 Related Titles</h3><ul>`;
+      related.forEach(r => {
+        r.entry.forEach(item => {
+          html += `<li><a href="animes.html?id=${item.mal_id}">${r.relation}: ${item.name}</a></li>`;
+        });
+      });
+      html += `</ul>`;
+    }
+
+    // 🎥 Watch Platforms
+    const streaming = anime.streaming || [];
+    if (streaming.length > 0) {
+      html += `<h3>🎥 Watch Platforms</h3><div>`;
+      streaming.forEach(s => {
+        html += `<a href="${s.url}" target="_blank" class="watch-btn">${s.name}</a> `;
+      });
+      html += `</div>`;
+    } else {
+      html += `<p>🎥 No official streaming links available.</p>`;
+    }
+
+    document.getElementById("animeDetails").innerHTML = html;
+
+    // Hide loader with fade-out animation
+    if (loader) {
+      loader.style.transition = "opacity 0.5s ease";
+      loader.style.opacity = "0";
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 500); // Match transition duration
+    }
+  })
+  .catch(err => {
+    document.getElementById("animeDetails").innerHTML =
+      `<p style="color:red;">⚠️ Failed to load anime details. Please try again.</p>`;
+    console.error(err);
+
+    // Hide loader on error
+    if (loader) {
+      loader.style.transition = "opacity 0.5s ease";
+      loader.style.opacity = "0";
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 500);
+    }
+  });
+
+// Back to home button
+document.getElementById("back-to-home").addEventListener("click", () => {
+  window.location.href = "index.html";
+});
+</script>
+</body>
+</html>
