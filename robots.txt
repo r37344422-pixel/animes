@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://animes-wine.vercel.app/sitemap.xml
+Sitemap: https://animes-wine.vercel.app/sitemap_data.xml
+
