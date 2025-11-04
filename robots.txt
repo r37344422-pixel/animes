@@ -1,3 +1,20 @@
 User-agent: *
 Allow: /
+
+# Disallow common non-public files/folders
+Disallow: /api/
+Disallow: /server/
+Disallow: /admin/
+
+# Sitemap location
 Sitemap: https://animes-wine.vercel.app/sitemap.xml
+
+# SEO & performance hints
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: *
+Crawl-delay: 10
