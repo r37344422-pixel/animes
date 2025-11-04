@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies - Rahul Anime Portal</title>
+    <meta name="description" content="Explore popular anime series on Rahul Anime Portal. Discover new shows, read reviews, and find where to watch your favorite anime.">
+    <meta property="og:title" content="Popular Anime Series - Rahul Anime Portal">
+    <meta property="og:description" content="Dive into the world of anime with detailed information on popular series and streaming options.">
+    <meta property="og:image" content="/assets/images/anime1.jpg">
+    <meta property="og:url" content="https://rahul-anime-portal.com/anime.html">
+    <title>Popular Anime Series - Rahul Anime Portal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/show-cards.css">
 </head>
 <body>
     <header>
@@ -19,22 +25,22 @@
                 <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="movies.html" class="active">Movies</a></li>
-                    <li><a href="anime.html">Anime</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="anime.html" class="active">Anime</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="search-bar">
-                <input type="text" placeholder="Search anime, movies...">
-                <button type="submit">Search</button>
+                <input type="text" id="search-input" placeholder="Search anime...">
+                <button type="submit" id="search-btn">Search</button>
             </div>
         </div>
     </header>
 
     <main class="container">
         <section class="page-content">
-            <h1>Anime Movies</h1>
+            <h1>Popular Anime Series</h1>
 
             <div class="ad-placeholder">
                 <!-- Ad Placeholder 728x90 -->
@@ -43,9 +49,9 @@
                 </div>
             </div>
 
-            <div id="movies-grid">
-                <!-- Movies will be loaded dynamically -->
-            </div>
+            <section id="shows-grid">
+                <!-- Dynamic content will be loaded here -->
+            </section>
         </section>
     </main>
 
@@ -83,9 +89,14 @@
         </div>
     </footer>
 
-    <script src="./assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>
+
+
+
+
+
 
 
 
