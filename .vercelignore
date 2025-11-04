@@ -1,2 +1,4 @@
-/public/sitemap.xml
-/public/robots.txt
+node_modules
+.env
+.git
+README.md
