@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Anime Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Rahul Anime Portal</h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="anime.html">Anime</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search anime, movies...">
+                <button type="submit" id="search-btn">Search</button>
+                <button type="button" id="clear-btn" style="display: none;">×</button>
+            </div>
+            <nav class="legal-menu" aria-label="Legal pages">
+                <ul>
+                    <li><a href="about.html"><i class="fa fa-info-circle"></i> About Us</a></li>
+                    <li><a href="privacy-policy.html"><i class="fa fa-user-shield"></i> Privacy Policy</a></li>
+                    <li><a href="disclaimer.html"><i class="fa fa-exclamation-triangle"></i> Disclaimer</a></li>
+                    <li><a href="terms.html"><i class="fa fa-file-contract"></i> Terms & Conditions</a></li>
+                    <li><a href="affiliate-disclosure.html"><i class="fa fa-link"></i> Affiliate Disclosure</a></li>
+                    <li><a href="dmca.html"><i class="fa fa-copyright"></i> DMCA</a></li>
+                    <li><a href="sitemap.html"><i class="fa fa-sitemap"></i> Sitemap</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Trending Anime This Week</h2>
+            <div class="carousel">
+                <div class="slide active">
+                    <img src="" alt="Trending Anime 1">
+                    <div class="slide-content">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="" alt="Trending Anime 2">
+                    <div class="slide-content">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="" alt="Trending Anime 3">
+                    <div class="slide-content">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev"><</button>
+                <button class="next">></button>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="search-results" style="display: none;">
+            <h2>Search Results</h2>
+            <div class="grid">
+            </div>
+        </section>
+
+        <section class="latest-updates">
+            <h2>Latest Updates</h2>
+            <div class="grid">
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <div class="top-rated">
+                <h3>Top Rated</h3>
+                <ul>
+                </ul>
+            </div>
+            <div class="ad-placeholder">
+                <!-- Ad Placeholder 300x250 -->
+                <div style="width: 300px; height: 250px; background-color: #333; color: #fff; display: flex; align-items: center; justify-content: center;">
+                    Advertisement
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Your ultimate destination for anime and movie reviews, news, and streaming guides. Stay updated with the latest in entertainment.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="anime.html">Anime</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank">Instagram</a>
+                        <a href="#" target="_blank">X (Twitter)</a>
+                        <a href="#" target="_blank">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+                        <li><a href="dmca.html">DMCA</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rahul Anime Portal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loader Overlay -->
+    <div id="loader" style="display: none;">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p>Fetching Anime Data...</p>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
+
+

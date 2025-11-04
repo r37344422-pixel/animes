@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Solo Leveling",
+    "year": 2024,
+    "poster": "https://image.tmdb.org/t/p/w500/llRszV2BqCb1l8KWZqfC8i8H8rL.jpg",
+    "description": "A weak hunter gains godlike powers and rises to become the strongest.",
+    "genre": ["Action", "Fantasy", "Adventure"],
+    "rating": 8.9
+  },
+  {
+    "title": "Kaiju No. 8",
+    "year": 2024,
+    "poster": "https://image.tmdb.org/t/p/w500/8HXqbRBgYRsSbmgYTXaXvzv7g8.jpg",
+    "description": "A young man joins the anti-kaiju defense force after gaining the ability to transform into a kaiju.",
+    "genre": ["Action", "Sci-Fi", "Horror"],
+    "rating": 8.5
+  },
+  {
+    "title": "Attack on Titan Final Season",
+    "year": 2023,
+    "poster": "https://image.tmdb.org/t/p/w500/8I37NtDffNV7AZlDa7uDvvqhov.jpg",
+    "description": "The final battle against the Titans unfolds as humanity fights for survival.",
+    "genre": ["Action", "Drama", "Fantasy"],
+    "rating": 9.0
+  },
+  {
+    "title": "Jujutsu Kaisen Season 2",
+    "year": 2023,
+    "poster": "https://image.tmdb.org/t/p/w500/3pTwMUEavTzVOh6yLN0aEwR7uSy.jpg",
+    "description": "Yuji Itadori continues his fight against cursed spirits as a Jujutsu Sorcerer.",
+    "genre": ["Action", "Supernatural", "Drama"],
+    "rating": 8.7
+  },
+  {
+    "title": "Demon Slayer: Kimetsu no Yaiba Season 4",
+    "year": 2024,
+    "poster": "https://image.tmdb.org/t/p/w500/h8Rb9gBr48ODIwYUttZNYeMWeUU.jpg",
+    "description": "Tanjiro and his friends face new challenges in the Hashira Training Arc.",
+    "genre": ["Action", "Fantasy", "Historical"],
+    "rating": 8.8
+  },
+  {
+    "title": "Wind Breaker",
+    "year": 2024,
+    "poster": "https://image.tmdb.org/t/p/w500/windbreakerposter.jpg",
+    "description": "A story of high school delinquents and their adventures in cycling.",
+    "genre": ["Action", "Sports", "Drama"],
+    "rating": 7.9
+  },
+  {
+    "title": "Blue Lock Movie: Episode Nagi",
+    "year": 2024,
+    "poster": "https://image.tmdb.org/t/p/w500/bluelocknagi.jpg",
+    "description": "Seishiro Nagi's journey in the Blue Lock program to become the world's best striker.",
+    "genre": ["Sports", "Drama", "Action"],
+    "rating": 8.2
+  },
+  {
+    "title": "Mashle: Magic and Muscles Season 2",
+    "year": 2024,
+    "poster": "https://image.tmdb.org/t/p/w500/TkTPELv4kC3u1lkloush8skOjE.jpg",
+    "description": "Mash continues his adventures in a magic-dominated world using his physical strength.",
+    "genre": ["Action", "Comedy", "Fantasy"],
+    "rating": 7.8
+  },
+  {
+    "title": "Haikyuu!! Final Movie",
+    "year": 2024,
+    "poster": "https://image.tmdb.org/t/p/w500/haikyuufinal.jpg",
+    "description": "The Karasuno High School volleyball team aims for the national championship.",
+    "genre": ["Sports", "Drama", "Comedy"],
+    "rating": 8.4
+  },
+  {
+    "title": "Oshi no Ko Season 2",
+    "year": 2024,
+    "poster": "https://image.tmdb.org/t/p/w500/oshinoko2.jpg",
+    "description": "Aquamarine and Ruby navigate the entertainment industry in their new lives.",
+    "genre": ["Drama", "Supernatural", "Romance"],
+    "rating": 8.6
+  }
+]

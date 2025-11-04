@@ -1,0 +1,82 @@
+/* Show cards for anime page */
+.show-card {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+}
+
+.show-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+}
+
+.show-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.show-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.show-card p:nth-child(3) {
+    color: #ff6b6b;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.show-card p:nth-child(4) {
+    color: #cccccc;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.show-card p:nth-child(5) {
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.show-card button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.show-card button:first-of-type {
+    background-color: #ff6b6b;
+    color: #ffffff;
+}
+
+.show-card button:first-of-type:hover {
+    background-color: #e55a5a;
+    transform: translateY(-2px);
+}
+
+.show-card button:last-of-type {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.show-card button:last-of-type:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
