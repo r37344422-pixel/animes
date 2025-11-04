@@ -52,10 +52,17 @@ header .container {
     font-size: 24px;
 }
 
+nav {
+    position: relative;
+}
+
 nav ul {
     display: flex;
     list-style: none;
     gap: 20px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 nav a {
@@ -1216,7 +1223,8 @@ footer {
     }
 
     nav ul {
-        display: none;
+        opacity: 0;
+        visibility: hidden;
         flex-direction: column;
         gap: 15px;
         position: absolute;
@@ -1226,10 +1234,12 @@ footer {
         background-color: #0b0b0b;
         padding: 20px;
         border-top: 1px solid #333;
+        z-index: 1000;
     }
 
     nav ul.show {
-        display: flex;
+        opacity: 1;
+        visibility: visible;
     }
 
     header .container {
@@ -1237,9 +1247,14 @@ footer {
         gap: 20px;
     }
 
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
+    .search-bar {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .search-bar input {
+        width: 100%;
     }
 
     .legal-menu ul {
