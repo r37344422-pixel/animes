@@ -1,0 +1,16 @@
+This PR addresses the Vercel deployment problems to ensure the website works fully as a static site.
+
+**Changes Made:**
+- Updated vercel.json to properly serve all static files without routing conflicts
+- Changed all HTML asset paths from relative to absolute URLs (e.g., href="/assets/css/main.css")
+- Ensured sitemap.xml and robots.txt are accessible at root URLs
+- Maintained all existing functionality and design integrity
+
+**Files Modified:**
+- vercel.json: Simplified configuration for static builds
+- All HTML files: Updated CSS, JS, and image paths to absolute URLs
+
+**Expected Results:**
+- Homepage loads fully styled (no plain text)
+- sitemap.xml and robots.txt accessible without 404 errors
+- All assets load correctly on Vercel
